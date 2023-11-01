@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-SignIn</title>
+</head>
+<style>
+    .signup {
+        position: fixed;
+        width: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px rgb(124, 121, 121);
+    }
+
+    input {
+        outline: none;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    h1{
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <div class="sigupContainer">
+        <div class="signup">
+            <h1>New User Signup</h1>
+
+            <input type="text" name="Firstname" id="fname" onkeyup="firstname()" placeholder="First Name"><br>
+            <span id="fname-error"></span><br>
+
+            <input type="text" name="Username" id="uname" onkeyup="username()" placeholder="User Name"><br>
+            <span id="uname-error"></span><br>
+
+            <input type="email" name="Email" id="mail" onkeyup="email()" placeholder="Email"><br>
+            <span id="mail-error"></span><br>
+
+            <input type="password" name="password" id="psw" onkeyup="password()" placeholder="Password"><br>
+            <span id="psw-error"></span><br>
+
+            <input type="tel" name="tel" id="mobno" onkeyup="tel()" placeholder="Mobile no"><br>
+            <span id="mobno-error"></span><br>
+
+            <input type="text" name="pan" id="panno" onkeyup="pan()" placeholder="Pan no"><br>
+            <span id="panno-error"></span><br>
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+
+</html>
